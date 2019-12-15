@@ -68,11 +68,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNoteForm.Designer.cs">
+      <DependentUpon>CreateNoteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndexNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndexNoteForm.Designer.cs">
+      <DependentUpon>IndexNoteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models.Context.cs">
       <AutoGen>True</AutoGen>
@@ -92,11 +104,33 @@
     <Compile Include="NOTE.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="NoteManagement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TODOLIST.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="TodolistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodolistForm.Designer.cs">
+      <DependentUpon>TodolistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateNoteForm.Designer.cs">
+      <DependentUpon>UpdateNoteForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CreateNoteForm.resx">
+      <DependentUpon>CreateNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndexNoteForm.resx">
+      <DependentUpon>IndexNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -106,6 +140,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TodolistForm.resx">
+      <DependentUpon>TodolistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateNoteForm.resx">
+      <DependentUpon>UpdateNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Models.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Models.Designer.cs</LastGenOutput>
