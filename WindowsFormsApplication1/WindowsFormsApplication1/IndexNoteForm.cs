@@ -20,7 +20,15 @@ namespace WindowsFormsApplication1
             this.Load += IndexNoteForm_Load; 
             this.btnAdd.Click += btnAdd_Click; 
             this.BtnDelete.Click += btnDelete_Click;
+            this.btnTodolist.Click += btnTodolist_Click;
             this.grdNote.DoubleClick += grdClasses_DoubleClick; 
+        }
+
+        void btnTodolist_Click(object sender, EventArgs e)
+        {
+            var TodolistForm = new TodolistForm();
+            TodolistForm.ShowDialog();
+            this.LoadAllNote();
         }
 
         private void LoadAllNote()
@@ -50,7 +58,7 @@ namespace WindowsFormsApplication1
                 {
                     var @note = (NOTE)this.grdNote.SelectedRows[0].DataBoundItem;
                     this.Business.DeleteNote(@note.Id);
-                    MessageBox.Show("Delete class successfully.");
+                    MessageBox.Show("Delete Note successfully.");
                     this.LoadAllNote();
                 }
             }
@@ -62,6 +70,7 @@ namespace WindowsFormsApplication1
             createForm.ShowDialog();
             this.LoadAllNote();
         }
+        
 
         void IndexNoteForm_Load(object sender, EventArgs e)
         {

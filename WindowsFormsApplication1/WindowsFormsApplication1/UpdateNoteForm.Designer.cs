@@ -32,22 +32,24 @@
             this.txtContent = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtTitle
             // 
-            this.txtTitle.Location = new System.Drawing.Point(1, 1);
+            this.txtTitle.Location = new System.Drawing.Point(90, -1);
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(377, 42);
+            this.txtTitle.Size = new System.Drawing.Size(385, 75);
             this.txtTitle.TabIndex = 0;
             // 
             // txtContent
             // 
-            this.txtContent.Location = new System.Drawing.Point(1, 60);
+            this.txtContent.Location = new System.Drawing.Point(90, 139);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(474, 288);
+            this.txtContent.Size = new System.Drawing.Size(385, 236);
             this.txtContent.TabIndex = 1;
             // 
             // btnSave
@@ -68,11 +70,31 @@
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 17);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Title";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 139);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Content";
+            // 
             // UpdateNoteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 442);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtContent);
@@ -91,5 +113,7 @@
         private System.Windows.Forms.TextBox txtContent;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

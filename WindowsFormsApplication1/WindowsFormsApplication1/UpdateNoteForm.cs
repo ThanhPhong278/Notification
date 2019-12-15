@@ -39,9 +39,9 @@ namespace WindowsFormsApplication1
 
         void btnSave_Click(object sender, EventArgs e)
         {
-            var name = this.txtTitle.Text;
-            var description = this.txtContent.Text;
-            this.Business.UpdateNote(this.NoteId, name, description);
+            var title = this.txtTitle.Text;
+            var content = this.txtContent.Text;
+            this.Business.UpdateNote(this.NoteId, title, content);
             MessageBox.Show("Update Note successfully.");
         }
     }

@@ -74,6 +74,12 @@
     <Compile Include="CreateNoteForm.Designer.cs">
       <DependentUpon>CreateNoteForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateTodolist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateTodolist.Designer.cs">
+      <DependentUpon>CreateTodolist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,14 +122,24 @@
     <Compile Include="TodolistForm.Designer.cs">
       <DependentUpon>TodolistForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TodolistManagement.cs" />
     <Compile Include="UpdateNoteForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UpdateNoteForm.Designer.cs">
       <DependentUpon>UpdateNoteForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateTodolist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTodolist.Designer.cs">
+      <DependentUpon>UpdateTodolist.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CreateNoteForm.resx">
       <DependentUpon>CreateNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateTodolist.resx">
+      <DependentUpon>CreateTodolist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -145,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateNoteForm.resx">
       <DependentUpon>UpdateNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTodolist.resx">
+      <DependentUpon>UpdateTodolist.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Models.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

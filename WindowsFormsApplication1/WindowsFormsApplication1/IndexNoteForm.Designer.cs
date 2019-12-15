@@ -47,7 +47,7 @@
             this.grdNote.Name = "grdNote";
             this.grdNote.ReadOnly = true;
             this.grdNote.RowTemplate.Height = 24;
-            this.grdNote.Size = new System.Drawing.Size(608, 421);
+            this.grdNote.Size = new System.Drawing.Size(1050, 421);
             this.grdNote.TabIndex = 0;
             // 
             // menuStrip1
@@ -59,7 +59,7 @@
             this.btnTodolist});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(608, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1050, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 449);
+            this.ClientSize = new System.Drawing.Size(1050, 449);
             this.Controls.Add(this.grdNote);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

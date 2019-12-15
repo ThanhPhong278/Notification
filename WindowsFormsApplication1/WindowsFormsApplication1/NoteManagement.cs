@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace WindowsFormsApplication1
 {
     public class NoteManagement
     {
+        
+
+        
         public NOTE[] GetNote()
         {
             var db = new Notification_SoftwareEntities();
@@ -16,24 +18,26 @@ namespace WindowsFormsApplication1
 
         }
 
-        public void Create(string name, string description)
+        public void CreateNote(string title, string content)
         {
             var newNote = new NOTE();
-            newNote.TITLE = name;
-            newNote.CONTENT = description;
+            newNote.TITLE = title;
+            newNote.CONTENT = content;
+            newNote.DTIME = DateTime.Now;
+            
 
             var db = new Notification_SoftwareEntities();
             db.NOTE.Add(newNote);
             db.SaveChanges();
         }
 
-        public void UpdateNote(int id, string name, string description)
+        public void UpdateNote(int id, string title, string content)
         {
             var db = new Notification_SoftwareEntities();
             var oldNote = db.NOTE.Find(id);
 
-            oldNote.CONTENT = name;
-            oldNote.TITLE = description;
+            oldNote.TITLE= title;
+            oldNote.CONTENT = content;
 
             db.Entry(oldNote).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();

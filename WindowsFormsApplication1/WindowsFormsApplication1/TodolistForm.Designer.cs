@@ -28,55 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cklBox = new System.Windows.Forms.CheckedListBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.grdTodo = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.btnsave = new System.Windows.Forms.ToolStripMenuItem();
+            this.btndelete = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.grdTodo)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cklBox
+            // grdTodo
             // 
-            this.cklBox.FormattingEnabled = true;
-            this.cklBox.Location = new System.Drawing.Point(3, 3);
-            this.cklBox.Name = "cklBox";
-            this.cklBox.Size = new System.Drawing.Size(414, 310);
-            this.cklBox.TabIndex = 0;
+            this.grdTodo.AllowUserToAddRows = false;
+            this.grdTodo.AllowUserToDeleteRows = false;
+            this.grdTodo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdTodo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdTodo.Location = new System.Drawing.Point(0, 28);
+            this.grdTodo.Name = "grdTodo";
+            this.grdTodo.ReadOnly = true;
+            this.grdTodo.RowTemplate.Height = 24;
+            this.grdTodo.Size = new System.Drawing.Size(940, 419);
+            this.grdTodo.TabIndex = 3;
             // 
-            // btnSave
+            // menuStrip1
             // 
-            this.btnSave.Location = new System.Drawing.Point(49, 380);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(111, 47);
-            this.btnSave.TabIndex = 1;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnsave,
+            this.btndelete});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(940, 28);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnCancel
+            // btnsave
             // 
-            this.btnCancel.Location = new System.Drawing.Point(251, 380);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(105, 47);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(52, 24);
+            this.btnsave.Text = "Save";
+            // 
+            // btndelete
+            // 
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(65, 24);
+            this.btndelete.Text = "Delete";
             // 
             // TodolistForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 447);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.cklBox);
+            this.ClientSize = new System.Drawing.Size(940, 447);
+            this.Controls.Add(this.grdTodo);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "TodolistForm";
             this.Text = "TodolistForm";
+            ((System.ComponentModel.ISupportInitialize)(this.grdTodo)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox cklBox;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.DataGridView grdTodo;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem btnsave;
+        private System.Windows.Forms.ToolStripMenuItem btndelete;
+
     }
 }
