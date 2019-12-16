@@ -40,6 +40,7 @@
             // 
             this.grdTodo.AllowUserToAddRows = false;
             this.grdTodo.AllowUserToDeleteRows = false;
+            this.grdTodo.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.grdTodo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdTodo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdTodo.Location = new System.Drawing.Point(0, 28);
@@ -63,12 +64,14 @@
             // 
             // btnsave
             // 
+            this.btnsave.BackColor = System.Drawing.SystemColors.Info;
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(52, 24);
             this.btnsave.Text = "Save";
             // 
             // btndelete
             // 
+            this.btndelete.BackColor = System.Drawing.SystemColors.Info;
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(65, 24);
             this.btndelete.Text = "Delete";

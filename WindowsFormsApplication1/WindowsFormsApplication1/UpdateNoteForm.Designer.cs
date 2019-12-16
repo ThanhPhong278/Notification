@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateNoteForm));
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtContent = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@
             // 
             // txtTitle
             // 
+            this.txtTitle.BackColor = System.Drawing.SystemColors.Info;
             this.txtTitle.Location = new System.Drawing.Point(90, -1);
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
@@ -46,6 +48,7 @@
             // 
             // txtContent
             // 
+            this.txtContent.BackColor = System.Drawing.SystemColors.Info;
             this.txtContent.Location = new System.Drawing.Point(90, 139);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
@@ -54,21 +57,23 @@
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnSave.Location = new System.Drawing.Point(46, 381);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(111, 49);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnCancel.Location = new System.Drawing.Point(310, 381);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(106, 49);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -92,6 +97,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(475, 442);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

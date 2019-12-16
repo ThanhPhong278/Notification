@@ -41,6 +41,7 @@
             // 
             this.grdNote.AllowUserToAddRows = false;
             this.grdNote.AllowUserToDeleteRows = false;
+            this.grdNote.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.grdNote.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdNote.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grdNote.Location = new System.Drawing.Point(0, 28);
@@ -65,18 +66,21 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.SystemColors.Info;
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(49, 24);
             this.btnAdd.Text = "Add";
             // 
             // BtnDelete
             // 
+            this.BtnDelete.BackColor = System.Drawing.SystemColors.Info;
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(65, 24);
             this.BtnDelete.Text = "Delete";
             // 
             // btnTodolist
             // 
+            this.btnTodolist.BackColor = System.Drawing.SystemColors.Info;
             this.btnTodolist.Name = "btnTodolist";
             this.btnTodolist.Size = new System.Drawing.Size(74, 24);
             this.btnTodolist.Text = "Todolist";

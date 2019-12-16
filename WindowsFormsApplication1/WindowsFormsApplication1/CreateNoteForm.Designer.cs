@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateNoteForm));
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtContent = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.txtdtime = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtTitle
             // 
+            this.txtTitle.BackColor = System.Drawing.SystemColors.Info;
             this.txtTitle.Location = new System.Drawing.Point(73, 2);
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
@@ -48,37 +48,32 @@
             // 
             // txtContent
             // 
-            this.txtContent.Location = new System.Drawing.Point(73, 146);
+            this.txtContent.BackColor = System.Drawing.SystemColors.Info;
+            this.txtContent.Location = new System.Drawing.Point(73, 95);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(392, 216);
+            this.txtContent.Size = new System.Drawing.Size(392, 267);
             this.txtContent.TabIndex = 1;
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnCancel.Location = new System.Drawing.Point(311, 378);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(107, 47);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // btnSave
             // 
+            this.btnSave.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnSave.Location = new System.Drawing.Point(42, 378);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(106, 47);
             this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // txtdtime
-            // 
-            this.txtdtime.Location = new System.Drawing.Point(73, 78);
-            this.txtdtime.Multiline = true;
-            this.txtdtime.Name = "txtdtime";
-            this.txtdtime.Size = new System.Drawing.Size(289, 32);
-            this.txtdtime.TabIndex = 4;
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -90,20 +85,10 @@
             this.label1.Text = "Title";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-2, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "DateTime";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(-2, 146);
+            this.label3.Location = new System.Drawing.Point(-2, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 17);
             this.label3.TabIndex = 7;
@@ -113,11 +98,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(465, 437);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtdtime);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtContent);
@@ -135,9 +120,7 @@
         private System.Windows.Forms.TextBox txtContent;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox txtdtime;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
 
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateTodolist));
             this.txtname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnsave = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             // 
             // txtname
             // 
+            this.txtname.BackColor = System.Drawing.SystemColors.Info;
             this.txtname.Location = new System.Drawing.Point(114, 12);
             this.txtname.Multiline = true;
             this.txtname.Name = "txtname";
@@ -45,6 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.label1.Location = new System.Drawing.Point(2, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 17);
@@ -53,26 +56,29 @@
             // 
             // btnsave
             // 
+            this.btnsave.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnsave.Location = new System.Drawing.Point(60, 282);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(98, 49);
             this.btnsave.TabIndex = 2;
             this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.UseVisualStyleBackColor = false;
             // 
             // btncancel
             // 
+            this.btncancel.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btncancel.Location = new System.Drawing.Point(258, 282);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(101, 49);
             this.btncancel.TabIndex = 3;
             this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.UseVisualStyleBackColor = false;
             // 
             // UpdateTodolist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(425, 365);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnsave);
