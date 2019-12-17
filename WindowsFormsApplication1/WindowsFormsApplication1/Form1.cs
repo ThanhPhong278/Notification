@@ -15,6 +15,33 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+            btnNote.Click += btnNote_Click;
+            btnTodo.Click += btnTodo_Click;
+        }
+
+        void btnTodo_Click(object sender, EventArgs e)
+        {
+            var TodolistForm = new TodolistForm();
+            TodolistForm.ShowDialog();
+            this.LoadAllTodolist();
+        }
+
+        private void LoadAllTodolist()
+        {
+           
+        }
+
+        private void LoadAllNote()
+        {
+            
+        }
+
+        void btnNote_Click(object sender, EventArgs e)
+        {
+            //var indexNoteForm = new IndexNoteForm();
+            //indexNoteForm.ShowDialog();
+            new IndexNoteForm().ShowDialog();
+            this.LoadAllNote();
         }
 
         private void button2_Click(object sender, EventArgs e)
